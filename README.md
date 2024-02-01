@@ -11,11 +11,11 @@ refer to this link [medium-blog](https://medium.com/@abayomismart/creating-andro
 4. move the config.xml to the root folder of the angular project. 
 5. add the following in package.json in you angular root file. 
 
-     ``  "cordova-plugin-whitelist": "1.3.4"
+     `` 
   "}",
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+ 
     },
     "platforms": [
       "android",
