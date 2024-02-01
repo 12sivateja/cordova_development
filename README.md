@@ -1,27 +1,25 @@
 # AngularCordova
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+refer to this link [medium-blog](https://medium.com/@abayomismart/creating-android-ios-app-with-cordova-and-angular-e3cf82d4cbc2)
 
-## Development server
+# Project setUp  
+1. installing of the cordova globally 
+2. When the installation is completed. Go to the root directory of the angular application and run this command below to create your cordova application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+    `cordova create angular_cordova com.angular_cordova angular_cordova`
+3. after above command file will be generated which contains the config.xml  
+4. move the config.xml to the root folder of the angular project. 
+5. add the following in package.json in you angular root file. 
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+     ``  "cordova-plugin-whitelist": "1.3.4"
+  "}",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  }
+     ``

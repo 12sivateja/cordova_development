@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular_cordova",
+            "outputPath": "../angular_cordova/www",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -102,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1923e03f-a55e-4996-925c-cb64d8a53f5c"
   }
 }
